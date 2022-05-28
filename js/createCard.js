@@ -16,7 +16,6 @@ modalImage.addEventListener("change", uploadImage);
 
 function showModal(event) {
   modal.style.display = "flex";
-  body.style.background = "##000000a9" 
   
 }
 
@@ -33,18 +32,12 @@ function modalClose(event){
 function addNameModal(event) {
   modal.style.display = "none"
   
-  if(modalName.value && modalPrice.value && modalImage.value){
-    const objectOfModals = {
-      id: fruits.length + 1,
+      const objectOfModals = {
+      id: "phone-"+phone.length + 1,
       product: modalName.value,
       price: modalPrice.value,
       image: imgSelected
     }
     phone.push(objectOfModals);
-    selectProducts.innerHTML = "";
-    selectProducts.innerHTML = "<option>Select one option</option>";
-    listSelect();
-  }else{
-    alert("Los campos estan vacios");
-  }
+    createCards(objectOfModals);
 }

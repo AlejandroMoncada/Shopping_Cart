@@ -7,7 +7,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -35,6 +35,7 @@ section{
   justify-content: space-evenly;
   flex-wrap: wrap;
   align-items: center;
+  margin: 0;
 }
 
 select {
@@ -57,6 +58,7 @@ main {
 
 /* --- Nav --- */
 nav{
+  margin: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -69,7 +71,7 @@ nav{
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 10%;
+  width: 20%;
 }
 .logo{
   width: 50px;
@@ -88,15 +90,12 @@ nav{
 }
 
 .car{
-  width: 15%;
+  width: 17%;
 }
 .car:hover{
   transition: all .3s ease-in-out;
   cursor: pointer;
-  background-color: #dcdcdc;
-  box-shadow: 0px 0px 16px #7e7e7e;
-  border-radius: 1rem;
-  width: 17%;
+  width: 18%;
 }
 /* --- End nav --- */
 
@@ -108,6 +107,7 @@ nav{
   width: 35%;
   height: 100%;
   position: absolute;
+  bottom: 0;
   right: 0;
   display: none;
   transition: all .4s ease-in-out;
@@ -158,7 +158,7 @@ nav{
   height: 200px;
   border-radius: 20px;
   transition: all .4s ease-in-out;
-  margin: 4.5rem;
+  margin: 1rem 6rem;
 }
 .card:hover{
   width: 500px;
@@ -206,7 +206,7 @@ nav{
   transition-delay:  .6s ;
 }
 .container-second button{
-  background-color: #07c41a;
+  background-color: #718d9f;
   margin-top: 20px;
   width: 36%;
 }
@@ -228,7 +228,7 @@ nav{
   justify-content: flex-end;
   width: 100%;
 }
-.btn-close-modal{
+.btn-close-cart{
   display: flex;
   justify-content: center;
   align-items: center;

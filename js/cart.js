@@ -1,6 +1,6 @@
 const car = document.querySelector(".modal-cart");
 const btnCar = document.getElementById("car");
-const closeCart = document.querySelector(".close");
+const closeCart = document.querySelector(".close-cart");
 const body1 = document.querySelector(".body");
 let result = 1;
 
@@ -22,9 +22,8 @@ function closeCartModal(){
 function addCart(target){
   phone.map(element =>{
   if (target.target.id === element.id) {
-
-  const {id,product, image,price} = phone;
-
+    console.log(target.target.id );
+    console.log(element.id);
   const contentCart = document.createElement("div");
     contentCart.classList.add("card-of-cart");
 
