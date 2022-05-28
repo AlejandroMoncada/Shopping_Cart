@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+  opacity: 1;
+}
+
+header {
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Macondo', cursive;
+  font-size: 2rem;
+  color: #28930b;
+  border-bottom: #167d70 2px groove;
+  padding: 0;
+}
+
+section{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+select {
+  width: 12rem;
+  margin-top: 2rem;
+  box-shadow: 0 0 15px #07c41a;
+  border-radius: 15px;
+  background-color: #221007;
+  color: #ffff;
+}
+
+main {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+/* --- Nav --- */
+nav{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 6px 1px rgb(215, 215, 215);
+  position: absolute;
+}
+.content-logo{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+.logo{
+  width: 50px;
+  padding: 3px 0px 3px 0px;
+}
+.nameLogo{
+  font-family: Cooper;
+  font-size: 20px;
+}
+.content-car{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 20%;
+  margin-right: 20px;
+}
+
+.car{
+  width: 15%;
+}
+.car:hover{
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+  background-color: #dcdcdc;
+  box-shadow: 0px 0px 16px #7e7e7e;
+  border-radius: 1rem;
+  width: 17%;
+}
+/* --- End nav --- */
+
+
+/* ---Cart--- */
+.modal-cart{
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.557);
+  width: 35%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  display: none;
+  transition: all .4s ease-in-out;
+  overflow: auto;
+}
+
+.card-of-cart{
+  display: flex;
+  justify-content: space-between;
+  box-shadow: 0px 0px 6px black;
+  border-radius: 10px;
+  margin: 20px;
+  height: 10%;
+}
+
+.img-cart{
+  border-radius: 10px;
+  margin: 5px;
+  box-shadow: 0px 0px 6px black;
+}
+
+.description-card{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-Moreless{
+  margin: 5px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ---End Cart--- */
+.title{
+  margin: 90px 0px 0px 0px;
+}
+
+/* -- Section of card -- */
+.card{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 180px;
+  height: 200px;
+  border-radius: 20px;
+  transition: all .4s ease-in-out;
+  margin: 4.5rem;
+}
+.card:hover{
+  width: 500px;
+  box-shadow: 0px 0px 6px #000000cd;
+  background-color: #f6f6f6;
+  transition: all .6s ease-in-out;
+  margin: 0px 20px 0px 0px ;
+}
+.container-first{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.img-card{
+  display: flex;
+  width: 130px;
+  height: 130px;
+  margin: 15px;
+  border-radius: 10% ;
+}
+.img-card img{
+  width: 100%;
+  border-radius: 10%;
+  object-fit: cover;
+  transition: all .4s ease-in-out;
+}
+.container-first h4{
+  font-size: 21px;
+  transition: all .4s ease-in-out;
+}
+.card:hover .img-card img{
+  /* transform: translate(-20px); */
+  box-shadow: 1px 1px 10px #000000;
+  transition: all .4s ease-in-out;
+}
+.card:hover .container-first  h4{
+  /* transform: translate(-164px); */
+  transition: all .4s ease-in-out;
+}
+
+.container-second{
+  display: none;
+}
+.card:hover .container-second{
+  transition-delay:  .6s ;
+}
+.container-second button{
+  background-color: #07c41a;
+  margin-top: 20px;
+  width: 36%;
+}
+.container-second button:hover{
+  box-shadow: 0px 0px 4px #000000;
+}
+
+.card:hover .container-second{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 2s ease-in-out;
+}
+/* -- End of card --  */
+
+/*Codigo para la ventana modal*/
+.close{
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.btn-close-modal{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border:none;
+  border-radius: 3px;
+  background-color: #ff0000;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+}
+.btn-close-modal:hover{
+  transition: all 0.4s;
+  box-shadow: 0px 0px 6px #ff0000;
+  background-color: #c90303;
+}
+.modal{
+  transition: all .5s ease-in-out .1s;
+  width: 30rem;
+  height: 17rem;
+  padding: 10px;
+  display:none;
+  border-radius: 9px;
+  flex-direction: column;
+  align-items: center;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0px 0px 6px #000000cd;
+}
+
+.inputs{
+  width: 60%;
+  margin: 10px;
+  padding: 10px;
+  border: none ;
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.232);
+}
+button{
+  padding: 8px;
+  border-radius: 3px ;
+  cursor: pointer;
+  background-color: #718d9f;
+  width: 10rem;
+  border: none;
+  color: #fff;
+}
+button:hover{
+  background-color: #fff;
+  color: #718d9f;
+  border: 1px solid #718d9f;
+  box-shadow: 0px 0px 6px #718d9f;
+}
+
+.inputs:focus{
+ border: black;
+}

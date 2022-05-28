@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Carrito de compras</title>
+</head>
+<body class="body">
+  
+  <!-- <header><h1>Carrito de Compras</h1></header> -->
+  <nav class="body">
+    <div class="content-logo">
+      <img class="logo" src="images/logo.png"/>
+      <h2 class="nameLogo">Oppo<br>SmartPhone</h2>
+    </div>
+    <div class="content-car">
+      <button id="create-btn" class="createProduct">Crear producto</button>
+      <img id="car" class="car" src="images/carrito.png"/>
+    </div>
+  </nav>
+
+  <div class="modal">
+    <div class="close">
+      <div class="btn-close-modal">
+        X
+      </div>
+    </div>
+    <h3>Creación de objeto</h3>
+    <input id="new-name-modal" class="inputs" type="text" placeholder="Nombre del objeto" />
+    <input id="new-price-modal" class="inputs" type="text" placeholder="Precio del objeto" />
+    <input id="upload-image" class="inputs" type="file" />
+    <button id="btn-create-card">Crear objeto</button>
+  </div>
+
+
+  <div class="modal-cart">
+     <div class="close">
+      <div class="btn-close-modal">
+        X
+      </div>
+    </div>
+    <!-- <div class="card-of-cart">
+      <img class="img-cart" src="images/apple.jpeg">
+      <div class="description-card">
+        <h4></h4>
+        <p>1</p>
+        <button class="btn-Moreless">+</button>
+        <button class="btn-Moreless">-</button>
+        <button>Borrar</button>
+      </div>
+    </div> -->
+    
+  </div>
+  <h1 class="title">Obtén el SmartPhone de tus sueños</h1>
+
+  <section id="section">
+
+  </section>
+
+  <select id="selectFilter">
+    <option value="select">Select filter</option>
+    <option value="Menores a 2">Menor a 2</option>
+    <option value="Entre 2 y 4">Entre mayor a 2 y menor de 4</option>
+    <option value="Mayores a 4">Mayores a 4</option>
+  </select>
+
+
+    <!-- Este Select se debe renderizar por Javascript consumiendo el objeto -->
+  <select name="" id="select-products" value="">
+    <option value="">Select one option</option>    
+  </select>
+ 
+  <main></main>
+  <script src="js/selectCards.js"></script>
+  <script src="js/products.js"></script>
+  <script src="js/createCard.js"></script>
+  <script src="js/filterforPrice.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>
