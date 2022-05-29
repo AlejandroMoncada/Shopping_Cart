@@ -90,7 +90,7 @@ nav{
 }
 
 .car{
-  width: 17%;
+  width: 40px;
 }
 .car:hover{
   transition: all .3s ease-in-out;
@@ -113,7 +113,10 @@ nav{
   transition: all .4s ease-in-out;
   overflow: auto;
 }
-
+.nav-cart{
+  display: flex;
+  justify-content: space-between;
+}
 .card-of-cart{
   display: flex;
   justify-content: space-between;
@@ -144,6 +147,18 @@ nav{
   align-items: center;
 }
 
+.btn-close-card-cart{
+  background-color: #c90303;
+  color: #fff;
+  border: none;
+}
+.btn-close-card-cart:hover{
+  color: #fff;
+  background-color: #b80505;
+  border: none;
+  box-shadow: 0px 0px 10px #940303;
+}
+
 /* ---End Cart--- */
 .title{
   margin: 90px 0px 0px 0px;
@@ -158,14 +173,14 @@ nav{
   height: 200px;
   border-radius: 20px;
   transition: all .4s ease-in-out;
-  margin: 1rem 6rem;
+  margin: 1rem 9rem;
 }
 .card:hover{
   width: 500px;
   box-shadow: 0px 0px 6px #000000cd;
   background-color: #f6f6f6;
   transition: all .6s ease-in-out;
-  margin: 0px 20px 0px 0px ;
+  margin: 0 ;
 }
 .container-first{
   display: flex;

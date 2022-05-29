@@ -1,6 +1,6 @@
 const phone = [
-  {id:"phone-01",product: 'Xiaomi MI 11',price: 1100000 ,image: '/Images/Xiaomi.webp'},
-  {id:"phone-02",product: 'Huawei P30',price: 1000000,image: '/Images/huawei.jpg'},
+  {id:"phone-01",product: 'Xiaomi MI 11',price: 11.4,image: '/Images/Xiaomi.webp'},
+  {id:"phone-02",product: 'Huawei P30',price: 10.4,image: '/Images/huawei.jpg'},
   {id:"phone-03",product: 'Samsung S21',price: 0.8,image: '/Images/s21.JPG'},
   {id:"phone-04",product: 'Nokia X10',price: 1.5,image: '/Images/nokia.JPG'},
   {id:"phone-05",product: 'LG V70',price: 2,image: '/Images/lg.jpg'},
